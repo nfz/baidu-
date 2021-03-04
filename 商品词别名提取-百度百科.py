@@ -22,7 +22,7 @@ with open("/Users/baidu/Desktop/github/baidu-/商品词文本.txt", "r") as f:
                 str1=str1+aa[zz+84+i]
                 i=i+1
             # print(str1)
-        fo = open("/Users/baidu/Desktop/github/baidu-/商品词文本别名写入.txt", "a")
+        fo = open("/Users/baidu/Desktop/github/baidu-/商品词别名文本写入.txt", "a")
         str1 = str1.replace('\t',"")
         str1 = str1.replace('\n',"")
         str1 = str1.replace(" ","")

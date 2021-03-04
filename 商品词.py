@@ -20,7 +20,7 @@ with open("/Users/baidu/Desktop/github/baidu-/商品词文本.txt", "r") as f:
             # print(strstr)
             strstr2=strstr2+'\t'+strstr
             # print(strstr2)
-        fo = open("/Users/baidu/Desktop/github/baidu-/商品词文本写入.txt", "a")
+        fo = open("/Users/baidu/Desktop/github/baidu-/商品词文本写入", "a")
         seq=line+'\t'+strstr2
         print(seq)
         fo.writelines(seq+'\n')

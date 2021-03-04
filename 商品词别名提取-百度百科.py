@@ -1,7 +1,7 @@
 import requests
 import time
 
-with open("/Users/baidu/Documents/new/v_cuiyang02-1/b2b/b2bspyter/商品词文本.txt", "r") as f:
+with open("/Users/baidu/Desktop/github/baidu-/商品词文本.txt", "r") as f:
     for line in f.readlines():
         line = line.strip('\n')
         ss=requests.get('http://www.baidu.com/s?wd='+line+"别名")
@@ -22,7 +22,7 @@ with open("/Users/baidu/Documents/new/v_cuiyang02-1/b2b/b2bspyter/商品词文�
                 str1=str1+aa[zz+84+i]
                 i=i+1
             # print(str1)
-        fo = open("/Users/baidu/Documents/new/v_cuiyang02-1/b2b/b2bspyter/商品词文本别名写入.txt", "a")
+        fo = open("/Users/baidu/Desktop/github/baidu-/商品词文本别名写入.txt", "a")
         str1 = str1.replace('\t',"")
         str1 = str1.replace('\n',"")
         str1 = str1.replace(" ","")
